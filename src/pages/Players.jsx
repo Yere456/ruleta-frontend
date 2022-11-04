@@ -49,7 +49,7 @@ function Players () {
 
       toast.promise(
         async () => {
-          const { data } = await axios.post('https://ruleta-api.onrender.com/api/players', players)
+          const { data } = await axios.post('https://ruleta-api-production.up.railway.app/api/players', players)
           createPlayers(data)
           navigate('/game')
         }, {
